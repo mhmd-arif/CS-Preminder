@@ -1,0 +1,28 @@
+D:\@Arif\OneDrive - UGM 365\Desktop\tes_preminder\Preminder\bin\Debug\Preminder.exe.config
+D:\@Arif\OneDrive - UGM 365\Desktop\tes_preminder\Preminder\bin\Debug\Preminder.exe
+D:\@Arif\OneDrive - UGM 365\Desktop\tes_preminder\Preminder\bin\Debug\Preminder.pdb
+D:\@Arif\OneDrive - UGM 365\Desktop\tes_preminder\Preminder\obj\Debug\Preminder.csprojAssemblyReference.cache
+D:\@Arif\OneDrive - UGM 365\Desktop\tes_preminder\Preminder\obj\Debug\Preminder.FormHomePage.resources
+D:\@Arif\OneDrive - UGM 365\Desktop\tes_preminder\Preminder\obj\Debug\Preminder.Properties.Resources.resources
+D:\@Arif\OneDrive - UGM 365\Desktop\tes_preminder\Preminder\obj\Debug\Preminder.csproj.GenerateResource.cache
+D:\@Arif\OneDrive - UGM 365\Desktop\tes_preminder\Preminder\obj\Debug\Preminder.csproj.CoreCompileInputs.cache
+D:\@Arif\OneDrive - UGM 365\Desktop\tes_preminder\Preminder\obj\Debug\Preminder.exe
+D:\@Arif\OneDrive - UGM 365\Desktop\tes_preminder\Preminder\obj\Debug\Preminder.pdb
+D:\@Arif\OneDrive - UGM 365\Desktop\tes_preminder\Preminder\obj\Debug\Preminder.Forms.FormJadwalKuliah.resources
+D:\@Arif\OneDrive - UGM 365\Desktop\tes_preminder\Preminder\obj\Debug\Preminder.Forms.FormKegiatan.resources
+D:\@Arif\OneDrive - UGM 365\Desktop\tes_preminder\Preminder\obj\Debug\Preminder.Forms.FormLihatSemua.resources
+D:\@Arif\OneDrive - UGM 365\Desktop\tes_preminder\Preminder\obj\Debug\Preminder.Forms.FormTugas.resources
+F:\CODING\Preminder_PBO\Preminder\bin\Debug\Preminder.exe.config
+F:\CODING\Preminder_PBO\Preminder\bin\Debug\Preminder.exe
+F:\CODING\Preminder_PBO\Preminder\bin\Debug\Preminder.pdb
+F:\CODING\Preminder_PBO\Preminder\obj\Debug\Preminder.csprojAssemblyReference.cache
+F:\CODING\Preminder_PBO\Preminder\obj\Debug\Preminder.FormHomePage.resources
+F:\CODING\Preminder_PBO\Preminder\obj\Debug\Preminder.Forms.FormJadwalKuliah.resources
+F:\CODING\Preminder_PBO\Preminder\obj\Debug\Preminder.Forms.FormKegiatan.resources
+F:\CODING\Preminder_PBO\Preminder\obj\Debug\Preminder.Forms.FormLihatSemua.resources
+F:\CODING\Preminder_PBO\Preminder\obj\Debug\Preminder.Forms.FormTugas.resources
+F:\CODING\Preminder_PBO\Preminder\obj\Debug\Preminder.Properties.Resources.resources
+F:\CODING\Preminder_PBO\Preminder\obj\Debug\Preminder.csproj.GenerateResource.cache
+F:\CODING\Preminder_PBO\Preminder\obj\Debug\Preminder.csproj.CoreCompileInputs.cache
+F:\CODING\Preminder_PBO\Preminder\obj\Debug\Preminder.exe
+F:\CODING\Preminder_PBO\Preminder\obj\Debug\Preminder.pdb
