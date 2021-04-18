@@ -16,5 +16,9 @@ namespace Preminder.Forms
         {
             InitializeComponent();
         }
+
+        private void btnTambahKegiatan_Click(object sender, EventArgs e)
+        {
+        }
     }
 }

@@ -57,6 +57,7 @@ namespace Preminder.Forms
             this.btnTambahKegiatan.TabIndex = 1;
             this.btnTambahKegiatan.Text = "Tambah";
             this.btnTambahKegiatan.UseVisualStyleBackColor = false;
+            this.btnTambahKegiatan.Click += new System.EventHandler(this.btnTambahKegiatan_Click);
             // 
             // btnHapusKegiatan
             // 
