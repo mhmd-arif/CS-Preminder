@@ -41,3 +41,18 @@ D:\PRAKTIKUM\SEMESTER 2\PBO\Preminder\Preminder\obj\Debug\Preminder.csproj.CoreC
 D:\PRAKTIKUM\SEMESTER 2\PBO\Preminder\Preminder\obj\Debug\Preminder.exe
 D:\PRAKTIKUM\SEMESTER 2\PBO\Preminder\Preminder\obj\Debug\Preminder.pdb
 D:\PRAKTIKUM\SEMESTER 2\PBO\Preminder\Preminder\obj\Debug\Preminder.Forms.FormTambahKegiatan.resources
+F:\Preminder\Preminder\bin\Debug\Preminder.exe.config
+F:\Preminder\Preminder\bin\Debug\Preminder.exe
+F:\Preminder\Preminder\bin\Debug\Preminder.pdb
+F:\Preminder\Preminder\obj\Debug\Preminder.csprojAssemblyReference.cache
+F:\Preminder\Preminder\obj\Debug\Preminder.FormHomePage.resources
+F:\Preminder\Preminder\obj\Debug\Preminder.Forms.FormJadwalKuliah.resources
+F:\Preminder\Preminder\obj\Debug\Preminder.Forms.FormKegiatan.resources
+F:\Preminder\Preminder\obj\Debug\Preminder.Forms.FormLihatSemua.resources
+F:\Preminder\Preminder\obj\Debug\Preminder.Forms.FormTambahKegiatan.resources
+F:\Preminder\Preminder\obj\Debug\Preminder.Forms.FormTugas.resources
+F:\Preminder\Preminder\obj\Debug\Preminder.Properties.Resources.resources
+F:\Preminder\Preminder\obj\Debug\Preminder.csproj.GenerateResource.cache
+F:\Preminder\Preminder\obj\Debug\Preminder.csproj.CoreCompileInputs.cache
+F:\Preminder\Preminder\obj\Debug\Preminder.exe
+F:\Preminder\Preminder\obj\Debug\Preminder.pdb

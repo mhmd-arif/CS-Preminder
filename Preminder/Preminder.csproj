@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entity\Activity.cs" />
+    <Compile Include="Entity\Schedule.cs" />
     <Compile Include="Entity\ToDoList.cs" />
     <Compile Include="FormHomePage.cs">
       <SubType>Form</SubType>
@@ -85,6 +87,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\IActivityRepository.cs" />
+    <Compile Include="Repository\IScheduleRepository.cs" />
     <Compile Include="Repository\ITodoRepository.cs" />
     <EmbeddedResource Include="FormHomePage.resx">
       <DependentUpon>FormHomePage.cs</DependentUpon>

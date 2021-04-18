@@ -7,21 +7,21 @@ using System.Threading.Tasks;
 
 namespace Preminder.Repository
 {
-    public interface ITodoRepository
+    public interface IActivityRepository
     {
-        ToDoList[] GetAll();
-        void Add(ToDoList toDoList);
+        Activity[] GetAll();
+        void Add(Activity activity);
         bool Remove(int no);
     }
 
-    public class TodoRepository : ITodoRepository
+    public class ActivityRepository : IActivityRepository
     {
-        public void Add(ToDoList toDoList)
+        public void Add(Activity activity)
         {
             throw new NotImplementedException();
         }
 
-        public ToDoList[] GetAll()
+        public Activity[] GetAll()
         {
             throw new NotImplementedException();
         }
@@ -31,4 +31,5 @@ namespace Preminder.Repository
             throw new NotImplementedException();
         }
     }
+
 }
