@@ -53,16 +53,16 @@ namespace Preminder.Forms
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(12, 256);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(202, 20);
+            this.label2.Size = new System.Drawing.Size(173, 16);
             this.label2.TabIndex = 20;
             this.label2.Text = "Kegiatan yang telah selesai";
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(449, 64);
+            this.button2.Location = new System.Drawing.Point(463, 64);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 19;
@@ -97,11 +97,11 @@ namespace Preminder.Forms
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(317, 64);
+            this.btnRemove.Location = new System.Drawing.Point(303, 64);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(75, 23);
+            this.btnRemove.Size = new System.Drawing.Size(111, 23);
             this.btnRemove.TabIndex = 15;
-            this.btnRemove.Text = "Remove All";
+            this.btnRemove.Text = "Hapus Kegiatan";
             this.btnRemove.UseVisualStyleBackColor = true;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
@@ -109,19 +109,19 @@ namespace Preminder.Forms
             // 
             this.btnMarkDone.Location = new System.Drawing.Point(180, 64);
             this.btnMarkDone.Name = "btnMarkDone";
-            this.btnMarkDone.Size = new System.Drawing.Size(75, 23);
+            this.btnMarkDone.Size = new System.Drawing.Size(95, 23);
             this.btnMarkDone.TabIndex = 14;
-            this.btnMarkDone.Text = "Mark Done";
+            this.btnMarkDone.Text = "Tandai Selesai";
             this.btnMarkDone.UseVisualStyleBackColor = true;
             this.btnMarkDone.Click += new System.EventHandler(this.btnMarkDone_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(75, 64);
+            this.btnAdd.Location = new System.Drawing.Point(44, 64);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(106, 23);
             this.btnAdd.TabIndex = 13;
-            this.btnAdd.Text = "Add Task";
+            this.btnAdd.Text = "Tambah Kegiatan";
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
