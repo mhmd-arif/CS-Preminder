@@ -44,12 +44,12 @@ namespace Preminder
 
         private void btnTugas_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormTugas(), sender);
+            OpenChildForm(new Forms.FormTambahTugas(), sender);
         }
 
         private void btnKegiatan_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new Forms.FormKegiatan(), sender);
+            OpenChildForm(new Forms.FormTambahKegiatan(), sender);
         }
 
         private void btnJadwal_Click(object sender, EventArgs e)

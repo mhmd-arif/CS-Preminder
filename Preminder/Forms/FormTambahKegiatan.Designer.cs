@@ -45,16 +45,17 @@ namespace Preminder.Forms
             // 
             this.finishedTask.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Strikeout, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.finishedTask.FormattingEnabled = true;
-            this.finishedTask.Location = new System.Drawing.Point(12, 279);
+            this.finishedTask.Location = new System.Drawing.Point(12, 278);
             this.finishedTask.Name = "finishedTask";
-            this.finishedTask.Size = new System.Drawing.Size(584, 160);
+            this.finishedTask.Size = new System.Drawing.Size(860, 160);
             this.finishedTask.TabIndex = 21;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 256);
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label2.Location = new System.Drawing.Point(12, 259);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(173, 16);
             this.label2.TabIndex = 20;
@@ -62,7 +63,7 @@ namespace Preminder.Forms
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(463, 64);
+            this.button2.Location = new System.Drawing.Point(629, 63);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 19;
@@ -72,7 +73,7 @@ namespace Preminder.Forms
             // 
             // tbRemoveAll
             // 
-            this.tbRemoveAll.Location = new System.Drawing.Point(508, 1);
+            this.tbRemoveAll.Location = new System.Drawing.Point(784, 8);
             this.tbRemoveAll.Name = "tbRemoveAll";
             this.tbRemoveAll.Size = new System.Drawing.Size(88, 23);
             this.tbRemoveAll.TabIndex = 18;
@@ -83,21 +84,21 @@ namespace Preminder.Forms
             // lvToDo
             // 
             this.lvToDo.FormattingEnabled = true;
-            this.lvToDo.Location = new System.Drawing.Point(12, 93);
+            this.lvToDo.Location = new System.Drawing.Point(12, 92);
             this.lvToDo.Name = "lvToDo";
-            this.lvToDo.Size = new System.Drawing.Size(584, 160);
+            this.lvToDo.Size = new System.Drawing.Size(860, 160);
             this.lvToDo.TabIndex = 17;
             // 
             // TBAdd
             // 
-            this.TBAdd.Location = new System.Drawing.Point(12, 38);
+            this.TBAdd.Location = new System.Drawing.Point(12, 37);
             this.TBAdd.Name = "TBAdd";
-            this.TBAdd.Size = new System.Drawing.Size(584, 20);
+            this.TBAdd.Size = new System.Drawing.Size(860, 20);
             this.TBAdd.TabIndex = 16;
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(303, 64);
+            this.btnRemove.Location = new System.Drawing.Point(484, 63);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(111, 23);
             this.btnRemove.TabIndex = 15;
@@ -107,7 +108,7 @@ namespace Preminder.Forms
             // 
             // btnMarkDone
             // 
-            this.btnMarkDone.Location = new System.Drawing.Point(180, 64);
+            this.btnMarkDone.Location = new System.Drawing.Point(352, 63);
             this.btnMarkDone.Name = "btnMarkDone";
             this.btnMarkDone.Size = new System.Drawing.Size(95, 23);
             this.btnMarkDone.TabIndex = 14;
@@ -117,7 +118,7 @@ namespace Preminder.Forms
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(44, 64);
+            this.btnAdd.Location = new System.Drawing.Point(210, 63);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(106, 23);
             this.btnAdd.TabIndex = 13;
@@ -129,7 +130,8 @@ namespace Preminder.Forms
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(204, 9);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(359, 8);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(198, 20);
             this.label1.TabIndex = 12;
@@ -139,7 +141,9 @@ namespace Preminder.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(608, 439);
+            this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.CadetBlue;
+            this.ClientSize = new System.Drawing.Size(884, 461);
             this.Controls.Add(this.finishedTask);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.button2);

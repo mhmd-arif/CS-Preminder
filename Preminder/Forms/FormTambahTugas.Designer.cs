@@ -37,6 +37,8 @@ namespace Preminder.Forms
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTambahTugas));
             this.tBTugasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.tBTugasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.preminderDataSet = new Preminder.PreminderDataSet();
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -51,18 +53,16 @@ namespace Preminder.Forms
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.refreshTugas = new System.Windows.Forms.ToolStripButton();
             this.tBTugasDataGridView = new System.Windows.Forms.DataGridView();
-            this.noTextBox = new System.Windows.Forms.TextBox();
-            this.tugasTextBox = new System.Windows.Forms.TextBox();
-            this.tenggat_PengumpulanTextBox = new System.Windows.Forms.TextBox();
-            this.keteranganTextBox = new System.Windows.Forms.TextBox();
-            this.tBTugasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.preminderDataSet = new Preminder.PreminderDataSet();
-            this.tBTugasTableAdapter = new Preminder.PreminderDataSetTableAdapters.TBTugasTableAdapter();
-            this.tableAdapterManager = new Preminder.PreminderDataSetTableAdapters.TableAdapterManager();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.noTextBox = new System.Windows.Forms.TextBox();
+            this.tugasTextBox = new System.Windows.Forms.TextBox();
+            this.tenggat_PengumpulanTextBox = new System.Windows.Forms.TextBox();
+            this.keteranganTextBox = new System.Windows.Forms.TextBox();
+            this.tBTugasTableAdapter = new Preminder.PreminderDataSetTableAdapters.TBTugasTableAdapter();
+            this.tableAdapterManager = new Preminder.PreminderDataSetTableAdapters.TableAdapterManager();
             this.btnAddTugas = new System.Windows.Forms.Button();
             this.btnSaveTugas = new System.Windows.Forms.Button();
             this.btnRemoveTugas = new System.Windows.Forms.Button();
@@ -73,14 +73,15 @@ namespace Preminder.Forms
             keteranganLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.tBTugasBindingNavigator)).BeginInit();
             this.tBTugasBindingNavigator.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tBTugasDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tBTugasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.preminderDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBTugasDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // noLabel
             // 
             noLabel.AutoSize = true;
+            noLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             noLabel.Location = new System.Drawing.Point(19, 31);
             noLabel.Name = "noLabel";
             noLabel.Size = new System.Drawing.Size(24, 13);
@@ -90,6 +91,7 @@ namespace Preminder.Forms
             // tugasLabel
             // 
             tugasLabel.AutoSize = true;
+            tugasLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             tugasLabel.Location = new System.Drawing.Point(19, 57);
             tugasLabel.Name = "tugasLabel";
             tugasLabel.Size = new System.Drawing.Size(40, 13);
@@ -99,6 +101,7 @@ namespace Preminder.Forms
             // tenggat_PengumpulanLabel
             // 
             tenggat_PengumpulanLabel.AutoSize = true;
+            tenggat_PengumpulanLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             tenggat_PengumpulanLabel.Location = new System.Drawing.Point(19, 83);
             tenggat_PengumpulanLabel.Name = "tenggat_PengumpulanLabel";
             tenggat_PengumpulanLabel.Size = new System.Drawing.Size(118, 13);
@@ -108,6 +111,7 @@ namespace Preminder.Forms
             // keteranganLabel
             // 
             keteranganLabel.AutoSize = true;
+            keteranganLabel.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             keteranganLabel.Location = new System.Drawing.Point(19, 109);
             keteranganLabel.Name = "keteranganLabel";
             keteranganLabel.Size = new System.Drawing.Size(65, 13);
@@ -142,7 +146,7 @@ namespace Preminder.Forms
             this.tBTugasBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.tBTugasBindingNavigator.Name = "tBTugasBindingNavigator";
             this.tBTugasBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.tBTugasBindingNavigator.Size = new System.Drawing.Size(851, 25);
+            this.tBTugasBindingNavigator.Size = new System.Drawing.Size(884, 25);
             this.tBTugasBindingNavigator.TabIndex = 0;
             this.tBTugasBindingNavigator.Text = "bindingNavigator1";
             // 
@@ -154,6 +158,16 @@ namespace Preminder.Forms
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
             this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
             this.bindingNavigatorAddNewItem.Text = "Add new";
+            // 
+            // tBTugasBindingSource
+            // 
+            this.tBTugasBindingSource.DataMember = "TBTugas";
+            this.tBTugasBindingSource.DataSource = this.preminderDataSet;
+            // 
+            // preminderDataSet
+            // 
+            this.preminderDataSet.DataSetName = "PreminderDataSet";
+            this.preminderDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // bindingNavigatorCountItem
             // 
@@ -273,8 +287,35 @@ namespace Preminder.Forms
             this.tBTugasDataGridView.Location = new System.Drawing.Point(316, 28);
             this.tBTugasDataGridView.MultiSelect = false;
             this.tBTugasDataGridView.Name = "tBTugasDataGridView";
-            this.tBTugasDataGridView.Size = new System.Drawing.Size(523, 410);
+            this.tBTugasDataGridView.Size = new System.Drawing.Size(556, 421);
             this.tBTugasDataGridView.TabIndex = 1;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "No";
+            this.dataGridViewTextBoxColumn1.HeaderText = "No";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Width = 46;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Tugas";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Tugas";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "Tenggat_Pengumpulan";
+            this.dataGridViewTextBoxColumn3.HeaderText = "Tenggat_Pengumpulan";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Keterangan";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Keterangan";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // noTextBox
             // 
@@ -309,16 +350,6 @@ namespace Preminder.Forms
             this.keteranganTextBox.Size = new System.Drawing.Size(144, 20);
             this.keteranganTextBox.TabIndex = 9;
             // 
-            // tBTugasBindingSource
-            // 
-            this.tBTugasBindingSource.DataMember = "TBTugas";
-            this.tBTugasBindingSource.DataSource = this.preminderDataSet;
-            // 
-            // preminderDataSet
-            // 
-            this.preminderDataSet.DataSetName = "PreminderDataSet";
-            this.preminderDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // tBTugasTableAdapter
             // 
             this.tBTugasTableAdapter.ClearBeforeFill = true;
@@ -328,33 +359,6 @@ namespace Preminder.Forms
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.TBTugasTableAdapter = this.tBTugasTableAdapter;
             this.tableAdapterManager.UpdateOrder = Preminder.PreminderDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.DisplayedCells;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "No";
-            this.dataGridViewTextBoxColumn1.HeaderText = "No";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Width = 46;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.DataPropertyName = "Tugas";
-            this.dataGridViewTextBoxColumn2.HeaderText = "Tugas";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "Tenggat_Pengumpulan";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Tenggat_Pengumpulan";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.DataPropertyName = "Keterangan";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Keterangan";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
             // btnAddTugas
             // 
@@ -401,7 +405,8 @@ namespace Preminder.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(851, 450);
+            this.BackColor = System.Drawing.Color.CadetBlue;
+            this.ClientSize = new System.Drawing.Size(884, 461);
             this.Controls.Add(this.btnRefreshTugas);
             this.Controls.Add(this.btnRemoveTugas);
             this.Controls.Add(this.btnSaveTugas);
@@ -422,9 +427,9 @@ namespace Preminder.Forms
             ((System.ComponentModel.ISupportInitialize)(this.tBTugasBindingNavigator)).EndInit();
             this.tBTugasBindingNavigator.ResumeLayout(false);
             this.tBTugasBindingNavigator.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.tBTugasDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tBTugasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.preminderDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBTugasDataGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
