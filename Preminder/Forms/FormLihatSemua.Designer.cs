@@ -31,12 +31,13 @@ namespace Preminder.Forms
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvActiviy = new System.Windows.Forms.Label();
+            this.dgvCourseSchedule = new System.Windows.Forms.DataGridView();
+            this.dgvToDo = new System.Windows.Forms.DataGridView();
             this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.btnRefres = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCourseSchedule)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvToDo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -58,30 +59,30 @@ namespace Preminder.Forms
             this.label2.TabIndex = 8;
             this.label2.Text = "Tugas : ";
             // 
-            // label3
+            // dgvActiviy
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(44, 303);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 13);
-            this.label3.TabIndex = 9;
-            this.label3.Text = "Kegiatan :";
+            this.dgvActiviy.AutoSize = true;
+            this.dgvActiviy.Location = new System.Drawing.Point(44, 303);
+            this.dgvActiviy.Name = "dgvActiviy";
+            this.dgvActiviy.Size = new System.Drawing.Size(55, 13);
+            this.dgvActiviy.TabIndex = 9;
+            this.dgvActiviy.Text = "Kegiatan :";
             // 
-            // dataGridView1
+            // dgvCourseSchedule
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(47, 41);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(706, 109);
-            this.dataGridView1.TabIndex = 10;
+            this.dgvCourseSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCourseSchedule.Location = new System.Drawing.Point(47, 41);
+            this.dgvCourseSchedule.Name = "dgvCourseSchedule";
+            this.dgvCourseSchedule.Size = new System.Drawing.Size(706, 109);
+            this.dgvCourseSchedule.TabIndex = 10;
             // 
-            // dataGridView2
+            // dgvToDo
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(47, 181);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(706, 109);
-            this.dataGridView2.TabIndex = 11;
+            this.dgvToDo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvToDo.Location = new System.Drawing.Point(47, 181);
+            this.dgvToDo.Name = "dgvToDo";
+            this.dgvToDo.Size = new System.Drawing.Size(706, 109);
+            this.dgvToDo.TabIndex = 11;
             // 
             // dataGridView3
             // 
@@ -91,22 +92,34 @@ namespace Preminder.Forms
             this.dataGridView3.Size = new System.Drawing.Size(706, 109);
             this.dataGridView3.TabIndex = 12;
             // 
+            // btnRefres
+            // 
+            this.btnRefres.Location = new System.Drawing.Point(678, 12);
+            this.btnRefres.Name = "btnRefres";
+            this.btnRefres.Size = new System.Drawing.Size(75, 23);
+            this.btnRefres.TabIndex = 13;
+            this.btnRefres.Text = "Refresh";
+            this.btnRefres.UseVisualStyleBackColor = true;
+            this.btnRefres.Click += new System.EventHandler(this.btnRefres_Click);
+            // 
             // FormLihatSemua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnRefres);
             this.Controls.Add(this.dataGridView3);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.dgvToDo);
+            this.Controls.Add(this.dgvCourseSchedule);
+            this.Controls.Add(this.dgvActiviy);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormLihatSemua";
             this.Text = "LihatSemua";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.Load += new System.EventHandler(this.FormLihatSemua_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvCourseSchedule)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvToDo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -116,9 +129,10 @@ namespace Preminder.Forms
         #endregion
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Label dgvActiviy;
+        private System.Windows.Forms.DataGridView dgvCourseSchedule;
+        private System.Windows.Forms.DataGridView dgvToDo;
         private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.Button btnRefres;
     }
 }
