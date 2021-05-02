@@ -116,3 +116,24 @@ D:\CODE PREMINDER C#\Week 5\PreminderWeek5\Preminder\obj\Debug\Preminder.csproj.
 D:\CODE PREMINDER C#\Week 5\PreminderWeek5\Preminder\obj\Debug\Preminder.csproj.CopyComplete
 D:\CODE PREMINDER C#\Week 5\PreminderWeek5\Preminder\obj\Debug\Preminder.exe
 D:\CODE PREMINDER C#\Week 5\PreminderWeek5\Preminder\obj\Debug\Preminder.pdb
+F:\preminder\Preminder\Preminder\bin\Debug\Database\PreminderDataSet.mdf
+F:\preminder\Preminder\Preminder\bin\Debug\Database\PreminderDataSet_log.ldf
+F:\preminder\Preminder\Preminder\bin\Debug\Preminder.exe.config
+F:\preminder\Preminder\Preminder\bin\Debug\Preminder.exe
+F:\preminder\Preminder\Preminder\bin\Debug\Preminder.pdb
+F:\preminder\Preminder\Preminder\bin\Debug\Newtonsoft.Json.dll
+F:\preminder\Preminder\Preminder\bin\Debug\Newtonsoft.Json.xml
+F:\preminder\Preminder\Preminder\obj\Debug\Preminder.csprojAssemblyReference.cache
+F:\preminder\Preminder\Preminder\obj\Debug\Preminder.FormHomePage.resources
+F:\preminder\Preminder\Preminder\obj\Debug\Preminder.Forms.FormKegiatan.resources
+F:\preminder\Preminder\Preminder\obj\Debug\Preminder.Forms.FormLihatSemua.resources
+F:\preminder\Preminder\Preminder\obj\Debug\Preminder.Forms.FormTambahKegiatan.resources
+F:\preminder\Preminder\Preminder\obj\Debug\Preminder.Forms.FormTambahTugas.resources
+F:\preminder\Preminder\Preminder\obj\Debug\Preminder.Forms.FormTugas.resources
+F:\preminder\Preminder\Preminder\obj\Debug\Preminder.Properties.Resources.resources
+F:\preminder\Preminder\Preminder\obj\Debug\Preminder.csproj.GenerateResource.cache
+F:\preminder\Preminder\Preminder\obj\Debug\Preminder.csproj.CoreCompileInputs.cache
+F:\preminder\Preminder\Preminder\obj\Debug\Preminder.csproj.CopyComplete
+F:\preminder\Preminder\Preminder\obj\Debug\Preminder.exe
+F:\preminder\Preminder\Preminder\obj\Debug\Preminder.pdb
+F:\preminder\Preminder\Preminder\obj\Debug\Preminder.Forms.FormJadwalKuliah.resources

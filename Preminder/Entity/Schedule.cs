@@ -8,11 +8,17 @@ namespace Preminder.Entity
 {
     public class Schedule
     {
-        public string _schedule { get; set; }
+        //  properties
+        public int Id { get; set; }
+        public string Course { get; set; }
+        public string Hour { get; set; }
+        public string Day { get; set; }
+
+        //  constructor
         public Schedule() { }
-        public Schedule(string paramSch)
+        public Schedule(string paramCS)
         {
-            _schedule = paramSch;
+            Course = paramCS;
         }
     }
 }

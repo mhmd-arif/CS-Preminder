@@ -110,6 +110,9 @@
     <Compile Include="Forms\FormTugas.Designer.cs">
       <DependentUpon>FormTugas.cs</DependentUpon>
     </Compile>
+    <Compile Include="PreminderDataSet.cs">
+      <DependentUpon>PreminderDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="PreminderDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
