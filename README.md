@@ -9,3 +9,4 @@ Muhammad Arif Hidayat (20/463608/TK/51600)
 ![](image/classDiagram.png)
 
 ## Diagram Basis Data
+![ERDPreminder](https://user-images.githubusercontent.com/73144184/116837857-4736a480-abf6-11eb-8574-aa3b0385335d.png)
