@@ -8,11 +8,18 @@ namespace Preminder.Entity
 {
     public class ToDoList
     {
-        public string todo { get; set; }
+        public int No { get; set; }
+        public string Tugas { get; set; }
+        public string Tenggat_Pengumpulan { get; set; }
+        public string Keterangan { get; set; }
+
         public ToDoList() { }
-        public ToDoList(string paramToDo)
+        public ToDoList(int _no, string _tugas, string _tenggat, string _keterangan)
         {
-            todo = paramToDo;
+            No = _no;
+            Tugas = _tugas;
+            Tenggat_Pengumpulan = _tenggat;
+            Keterangan = _keterangan;
         }
     }
 }

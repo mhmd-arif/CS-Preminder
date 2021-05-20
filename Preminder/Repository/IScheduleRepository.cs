@@ -25,7 +25,7 @@ namespace Preminder.Repository
 
         public List<Schedule> GetAll()
         {
-            List<Schedule> lsSchedule = new List<Schedule>();
+            List<Schedule> listSchedule = new List<Schedule>();
             
             SqlConnection con = new SqlConnection(connstring);
             string sql = "select * from TblCourseSchedule";
@@ -43,10 +43,10 @@ namespace Preminder.Repository
                 newSchedule.Day = dr["Day"].ToString();
                 newSchedule.Hour = dr["Hour"].ToString();
 
-                lsSchedule.Add(newSchedule);
+                listSchedule.Add(newSchedule);
             }
 
-            return lsSchedule;
+            return listSchedule;
         }
 
         public void Add(string course, string day, string hour)

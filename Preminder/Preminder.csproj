@@ -80,12 +80,6 @@
     <Compile Include="Forms\FormJadwalKuliah.Designer.cs">
       <DependentUpon>FormJadwalKuliah.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\FormKegiatan.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormKegiatan.Designer.cs">
-      <DependentUpon>FormKegiatan.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\FormLihatSemua.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -103,12 +97,6 @@
     </Compile>
     <Compile Include="Forms\FormTambahTugas.Designer.cs">
       <DependentUpon>FormTambahTugas.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Forms\FormTugas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\FormTugas.Designer.cs">
-      <DependentUpon>FormTugas.cs</DependentUpon>
     </Compile>
     <Compile Include="PreminderDataSet.cs">
       <DependentUpon>PreminderDataSet.xsd</DependentUpon>
@@ -129,9 +117,6 @@
     <EmbeddedResource Include="Forms\FormJadwalKuliah.resx">
       <DependentUpon>FormJadwalKuliah.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormKegiatan.resx">
-      <DependentUpon>FormKegiatan.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormLihatSemua.resx">
       <DependentUpon>FormLihatSemua.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,9 +125,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormTambahTugas.resx">
       <DependentUpon>FormTambahTugas.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Forms\FormTugas.resx">
-      <DependentUpon>FormTugas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

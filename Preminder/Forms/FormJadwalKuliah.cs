@@ -20,7 +20,7 @@ namespace Preminder.Forms
         static string DbName = "PreminderDataSet.mdf";
         string connstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + pathDB + DbName + ";Integrated Security=True";
 
-         ScheduleRepository newCourse = new ScheduleRepository();
+         private ScheduleRepository newCourse = new ScheduleRepository();
 
 
 

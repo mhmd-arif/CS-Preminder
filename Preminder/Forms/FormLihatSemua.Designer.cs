@@ -34,11 +34,10 @@ namespace Preminder.Forms
             this.dgvActiviy = new System.Windows.Forms.Label();
             this.dgvCourseSchedule = new System.Windows.Forms.DataGridView();
             this.dgvToDo = new System.Windows.Forms.DataGridView();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.btnRefres = new System.Windows.Forms.Button();
+            this.lb_Kegiatan = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCourseSchedule)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvToDo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -84,14 +83,6 @@ namespace Preminder.Forms
             this.dgvToDo.Size = new System.Drawing.Size(706, 109);
             this.dgvToDo.TabIndex = 11;
             // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(47, 319);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(706, 109);
-            this.dataGridView3.TabIndex = 12;
-            // 
             // btnRefres
             // 
             this.btnRefres.Location = new System.Drawing.Point(678, 12);
@@ -102,14 +93,22 @@ namespace Preminder.Forms
             this.btnRefres.UseVisualStyleBackColor = true;
             this.btnRefres.Click += new System.EventHandler(this.btnRefres_Click);
             // 
+            // lb_Kegiatan
+            // 
+            this.lb_Kegiatan.FormattingEnabled = true;
+            this.lb_Kegiatan.Location = new System.Drawing.Point(47, 320);
+            this.lb_Kegiatan.Name = "lb_Kegiatan";
+            this.lb_Kegiatan.Size = new System.Drawing.Size(706, 108);
+            this.lb_Kegiatan.TabIndex = 14;
+            // 
             // FormLihatSemua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lb_Kegiatan);
             this.Controls.Add(this.btnRefres);
-            this.Controls.Add(this.dataGridView3);
             this.Controls.Add(this.dgvToDo);
             this.Controls.Add(this.dgvCourseSchedule);
             this.Controls.Add(this.dgvActiviy);
@@ -120,7 +119,6 @@ namespace Preminder.Forms
             this.Load += new System.EventHandler(this.FormLihatSemua_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCourseSchedule)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvToDo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -132,7 +130,7 @@ namespace Preminder.Forms
         private System.Windows.Forms.Label dgvActiviy;
         private System.Windows.Forms.DataGridView dgvCourseSchedule;
         private System.Windows.Forms.DataGridView dgvToDo;
-        private System.Windows.Forms.DataGridView dataGridView3;
         private System.Windows.Forms.Button btnRefres;
+        private System.Windows.Forms.ListBox lb_Kegiatan;
     }
 }

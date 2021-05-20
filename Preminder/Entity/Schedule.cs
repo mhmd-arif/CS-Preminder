@@ -16,9 +16,12 @@ namespace Preminder.Entity
 
         //  constructor
         public Schedule() { }
-        public Schedule(string paramCS)
+        public Schedule(int _id, string _course, string _hour, string _day)
         {
-            Course = paramCS;
+            Id = _id;
+            Course = _course;
+            Hour = _hour;
+            Day = _day;
         }
     }
 }
