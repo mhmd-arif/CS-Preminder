@@ -8,11 +8,14 @@ namespace Preminder.Entity
 {
     public class Activity
     {
-        public string _activity { get; set; }
+        // properties
+        public string activity { get; set; }
+
+        // constructor
         public Activity() { }
         public Activity(string paramAct)
         {
-            _activity = paramAct;
+            activity = paramAct;
         }
     }
 }

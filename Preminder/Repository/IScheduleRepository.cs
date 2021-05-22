@@ -1,14 +1,12 @@
 ﻿using Preminder.Entity;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 using System.Data.SqlClient;
 
 namespace Preminder.Repository
 {
+    // Interface
     public interface IScheduleRepository
     {
         List<Schedule> GetAll();
@@ -17,12 +15,22 @@ namespace Preminder.Repository
         void Delete(int id);
     }
 
+
+    // Class
     public class ScheduleRepository : IScheduleRepository
     {
-        static string pathDB = Path.GetFullPath(Environment.CurrentDirectory) + @"\Database\";
-        static string DbName = "PreminderDataSet.mdf";
-        string connstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + pathDB + DbName + ";Integrated Security=True";
+        // Variables
+        readonly static string pathDB = Path.GetFullPath(Environment.CurrentDirectory) + @"\Database\";
+        readonly static string DbName = "PreminderDataSet.mdf";
+        readonly string connstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + pathDB + DbName + ";Integrated Security=True";
 
+
+        // Methods
+
+        /// <summary>
+        /// Method untuk mendapatkan data dari tabel CourseSchedule pada database
+        /// </summary>
+        /// <returns></returns>
         public List<Schedule> GetAll()
         {
             List<Schedule> listSchedule = new List<Schedule>();
@@ -49,6 +57,12 @@ namespace Preminder.Repository
             return listSchedule;
         }
 
+        /// <summary>
+        /// Method untuk menambahkan data ke dalam tabel CourseSchedule pada database
+        /// </summary>
+        /// <param name="course"></param>
+        /// <param name="day"></param>
+        /// <param name="hour"></param>
         public void Add(string course, string day, string hour)
         {
             SqlConnection con = new SqlConnection(connstring);
@@ -60,6 +74,10 @@ namespace Preminder.Repository
             con.Close();
         }
 
+        /// <summary>
+        /// Method untuk menghapus data di tabel CourseSchedule pada database
+        /// </summary>
+        /// <param name="id"></param>
         public void Delete(int id)
         {
             SqlConnection con = new SqlConnection(connstring);
@@ -72,6 +90,13 @@ namespace Preminder.Repository
             con.Close();
         }
 
+        /// <summary>
+        /// Method untuk mengupdate data di tabel CourseSchedule pada database
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="course"></param>
+        /// <param name="day"></param>
+        /// <param name="hour"></param>
         public void Update(int id, string course, string day, string hour)
         {
             SqlConnection con = new SqlConnection(connstring);

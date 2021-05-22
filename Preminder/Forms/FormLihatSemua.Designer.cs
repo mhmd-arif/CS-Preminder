@@ -34,27 +34,27 @@ namespace Preminder.Forms
             this.label2 = new System.Windows.Forms.Label();
             this.dgvActiviy = new System.Windows.Forms.Label();
             this.dgvCourseSchedule = new System.Windows.Forms.DataGridView();
-            this.dgvToDo = new System.Windows.Forms.DataGridView();
-            this.btnRefres = new System.Windows.Forms.Button();
-            this.lb_Kegiatan = new System.Windows.Forms.ListBox();
-            this.preminderDataSet = new Preminder.PreminderDataSet();
-            this.tBTugasBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tBTugasTableAdapter = new Preminder.PreminderDataSetTableAdapters.TBTugasTableAdapter();
-            this.tblCourseScheduleBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblCourseScheduleTableAdapter = new Preminder.PreminderDataSetTableAdapters.TblCourseScheduleTableAdapter();
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.courseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hourDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblCourseScheduleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.preminderDataSet = new Preminder.PreminderDataSet();
+            this.dgvToDo = new System.Windows.Forms.DataGridView();
             this.noDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tugasDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenggatPengumpulanDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.keteranganDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tBTugasBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.btnRefres = new System.Windows.Forms.Button();
+            this.lb_Kegiatan = new System.Windows.Forms.ListBox();
+            this.tBTugasTableAdapter = new Preminder.PreminderDataSetTableAdapters.TBTugasTableAdapter();
+            this.tblCourseScheduleTableAdapter = new Preminder.PreminderDataSetTableAdapters.TblCourseScheduleTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCourseSchedule)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvToDo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.preminderDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBTugasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCourseScheduleBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.preminderDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvToDo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBTugasBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -99,62 +99,6 @@ namespace Preminder.Forms
             this.dgvCourseSchedule.Size = new System.Drawing.Size(784, 109);
             this.dgvCourseSchedule.TabIndex = 10;
             // 
-            // dgvToDo
-            // 
-            this.dgvToDo.AutoGenerateColumns = false;
-            this.dgvToDo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvToDo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.noDataGridViewTextBoxColumn,
-            this.tugasDataGridViewTextBoxColumn,
-            this.tenggatPengumpulanDataGridViewTextBoxColumn,
-            this.keteranganDataGridViewTextBoxColumn});
-            this.dgvToDo.DataSource = this.tBTugasBindingSource;
-            this.dgvToDo.Location = new System.Drawing.Point(48, 202);
-            this.dgvToDo.Name = "dgvToDo";
-            this.dgvToDo.Size = new System.Drawing.Size(784, 109);
-            this.dgvToDo.TabIndex = 11;
-            // 
-            // btnRefres
-            // 
-            this.btnRefres.Location = new System.Drawing.Point(679, 12);
-            this.btnRefres.Name = "btnRefres";
-            this.btnRefres.Size = new System.Drawing.Size(75, 23);
-            this.btnRefres.TabIndex = 13;
-            this.btnRefres.Text = "Refresh";
-            this.btnRefres.UseVisualStyleBackColor = true;
-            this.btnRefres.Click += new System.EventHandler(this.btnRefres_Click);
-            // 
-            // lb_Kegiatan
-            // 
-            this.lb_Kegiatan.FormattingEnabled = true;
-            this.lb_Kegiatan.Location = new System.Drawing.Point(48, 338);
-            this.lb_Kegiatan.Name = "lb_Kegiatan";
-            this.lb_Kegiatan.Size = new System.Drawing.Size(784, 108);
-            this.lb_Kegiatan.TabIndex = 14;
-            // 
-            // preminderDataSet
-            // 
-            this.preminderDataSet.DataSetName = "PreminderDataSet";
-            this.preminderDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tBTugasBindingSource
-            // 
-            this.tBTugasBindingSource.DataMember = "TBTugas";
-            this.tBTugasBindingSource.DataSource = this.preminderDataSet;
-            // 
-            // tBTugasTableAdapter
-            // 
-            this.tBTugasTableAdapter.ClearBeforeFill = true;
-            // 
-            // tblCourseScheduleBindingSource
-            // 
-            this.tblCourseScheduleBindingSource.DataMember = "TblCourseSchedule";
-            this.tblCourseScheduleBindingSource.DataSource = this.preminderDataSet;
-            // 
-            // tblCourseScheduleTableAdapter
-            // 
-            this.tblCourseScheduleTableAdapter.ClearBeforeFill = true;
-            // 
             // idDataGridViewTextBoxColumn
             // 
             this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
@@ -182,6 +126,31 @@ namespace Preminder.Forms
             this.hourDataGridViewTextBoxColumn.HeaderText = "Jam";
             this.hourDataGridViewTextBoxColumn.Name = "hourDataGridViewTextBoxColumn";
             this.hourDataGridViewTextBoxColumn.Width = 220;
+            // 
+            // tblCourseScheduleBindingSource
+            // 
+            this.tblCourseScheduleBindingSource.DataMember = "TblCourseSchedule";
+            this.tblCourseScheduleBindingSource.DataSource = this.preminderDataSet;
+            // 
+            // preminderDataSet
+            // 
+            this.preminderDataSet.DataSetName = "PreminderDataSet";
+            this.preminderDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // dgvToDo
+            // 
+            this.dgvToDo.AutoGenerateColumns = false;
+            this.dgvToDo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvToDo.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.noDataGridViewTextBoxColumn,
+            this.tugasDataGridViewTextBoxColumn,
+            this.tenggatPengumpulanDataGridViewTextBoxColumn,
+            this.keteranganDataGridViewTextBoxColumn});
+            this.dgvToDo.DataSource = this.tBTugasBindingSource;
+            this.dgvToDo.Location = new System.Drawing.Point(48, 202);
+            this.dgvToDo.Name = "dgvToDo";
+            this.dgvToDo.Size = new System.Drawing.Size(784, 109);
+            this.dgvToDo.TabIndex = 11;
             // 
             // noDataGridViewTextBoxColumn
             // 
@@ -212,6 +181,37 @@ namespace Preminder.Forms
             this.keteranganDataGridViewTextBoxColumn.Name = "keteranganDataGridViewTextBoxColumn";
             this.keteranganDataGridViewTextBoxColumn.Width = 220;
             // 
+            // tBTugasBindingSource
+            // 
+            this.tBTugasBindingSource.DataMember = "TBTugas";
+            this.tBTugasBindingSource.DataSource = this.preminderDataSet;
+            // 
+            // btnRefres
+            // 
+            this.btnRefres.Location = new System.Drawing.Point(679, 12);
+            this.btnRefres.Name = "btnRefres";
+            this.btnRefres.Size = new System.Drawing.Size(75, 23);
+            this.btnRefres.TabIndex = 13;
+            this.btnRefres.Text = "Refresh";
+            this.btnRefres.UseVisualStyleBackColor = true;
+            this.btnRefres.Click += new System.EventHandler(this.btnRefres_Click);
+            // 
+            // lb_Kegiatan
+            // 
+            this.lb_Kegiatan.FormattingEnabled = true;
+            this.lb_Kegiatan.Location = new System.Drawing.Point(48, 338);
+            this.lb_Kegiatan.Name = "lb_Kegiatan";
+            this.lb_Kegiatan.Size = new System.Drawing.Size(784, 108);
+            this.lb_Kegiatan.TabIndex = 14;
+            // 
+            // tBTugasTableAdapter
+            // 
+            this.tBTugasTableAdapter.ClearBeforeFill = true;
+            // 
+            // tblCourseScheduleTableAdapter
+            // 
+            this.tblCourseScheduleTableAdapter.ClearBeforeFill = true;
+            // 
             // FormLihatSemua
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -229,10 +229,10 @@ namespace Preminder.Forms
             this.Text = "LihatSemua";
             this.Load += new System.EventHandler(this.FormLihatSemua_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCourseSchedule)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvToDo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.preminderDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tBTugasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCourseScheduleBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.preminderDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvToDo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tBTugasBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

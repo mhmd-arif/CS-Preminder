@@ -9,11 +9,13 @@ namespace Preminder.Entity
 {
     class FormDataKegiatan
     {
+        // properties
         [JsonProperty(Order = 0)]
         public List<String> finishedTasks { get; set; }
         [JsonProperty(Order = 1)]
         public List<String> toDoTasks { get; set; }
 
+        // constructor
         public FormDataKegiatan(List<String> toDoTasks, List<String> finishedTasks)
         {
             this.toDoTasks = toDoTasks;

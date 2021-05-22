@@ -1,14 +1,12 @@
 ﻿using Preminder.Entity;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.IO;
 using System.Data.SqlClient;
 
 namespace Preminder.Repository
 {
+    // Interface
     public interface ITodoRepository
     {
         List<ToDoList> GetAllToDo();
@@ -17,17 +15,22 @@ namespace Preminder.Repository
         bool Remove(int no);
     }
 
+
+    // Class
     public class TodoRepository : ITodoRepository
     {
-        static string pathDB = Path.GetFullPath(Environment.CurrentDirectory) + @"\Database\";
-        static string DbName = "PreminderDataSet.mdf";
-        string connstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + pathDB + DbName + ";Integrated Security=True";
+        // Variables
+        readonly private static string pathDB = Path.GetFullPath(Environment.CurrentDirectory) + @"\Database\";
+        readonly private static string DbName = "PreminderDataSet.mdf";
+        readonly private static string connstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + pathDB + DbName + ";Integrated Security=True";
 
-        public void Add(ToDoList toDoList)
-        {
-            throw new NotImplementedException();
-        }
 
+        // Methods
+
+        /// <summary>
+        /// Method untuk mendapatkan data dari tabel Tugas pada database
+        /// </summary>
+        /// <returns></returns>
         public List<ToDoList> GetAllToDo()
         {
             List<ToDoList> listToDo = new List<ToDoList>();
@@ -54,10 +57,14 @@ namespace Preminder.Repository
             return listToDo;
         }
 
-        public bool Remove(int no)
+        public void Add(ToDoList toDoList)
         {
             throw new NotImplementedException();
         }
 
+        public bool Remove(int no)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

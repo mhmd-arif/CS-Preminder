@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Preminder.Forms
@@ -22,14 +15,12 @@ namespace Preminder.Forms
             this.Validate();
             this.tBTugasBindingSource.EndEdit();
             this.tableAdapterManager.UpdateAll(this.preminderDataSet);
-
         }
 
         private void FormTambahTugas_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'preminderDataSet.TBTugas' table. You can move, or remove it, as needed.
             this.tBTugasTableAdapter.Fill(this.preminderDataSet.TBTugas);
-
         }
 
         private void refreshTugas_Click(object sender, EventArgs e)

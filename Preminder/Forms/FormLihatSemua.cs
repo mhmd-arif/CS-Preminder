@@ -1,27 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 using Preminder.Entity;
 using Preminder.Repository;
 using System.IO;
-using System.Windows.Input;
 using Newtonsoft.Json;
-using Preminder.Forms;
+
 
 namespace Preminder.Forms
 {
     public partial class FormLihatSemua : Form
     {
-        private ScheduleRepository newCourseSchedule = new ScheduleRepository();
-        private TodoRepository newToDo = new TodoRepository();
+        // Variables
+        readonly private ScheduleRepository newCourseSchedule = new ScheduleRepository();
+        readonly private TodoRepository newToDo = new TodoRepository();
         private List<String> toDoTasks = new List<string>();
+
 
         public FormLihatSemua()
         {
@@ -29,25 +23,26 @@ namespace Preminder.Forms
         }
 
         private void FormLihatSemua_Load(object sender, EventArgs e)
-        {
-            
-            // TODO: This line of code loads data into the 'preminderDataSet.TBTugas' table. You can move, or remove it, as needed.
-            this.tBTugasTableAdapter.Fill(this.preminderDataSet.TBTugas);
-            updateDgv();
-            loadFromFile();
+        {           
+            UpdateDgv();
+            LoadFromFile();
             lb_Kegiatan.DataSource = toDoTasks;
         }
 
         private void btnRefres_Click(object sender, EventArgs e)
         {
-            updateDgv();
-            loadFromFile();
+            UpdateDgv();
+            LoadFromFile();
             lb_Kegiatan.DataSource = toDoTasks;
         }
 
 
+        // Methods 
 
-        public void updateDgv()
+        /// <summary>
+        /// Method untuk mengupdate data pada data grid view, sumber data dari data base PreminderDataSet.mdf
+        /// </summary>
+        public void UpdateDgv()
         {
             List<Schedule> listSchedule = newCourseSchedule.GetAll();
             dgvCourseSchedule.DataSource = listSchedule;
@@ -56,7 +51,10 @@ namespace Preminder.Forms
             dgvToDo.DataSource = listToDo;
         }
 
-        private void loadFromFile()
+        /// <summary>
+        ///  Method untuk mengupdate data dari file .tct
+        /// </summary>
+        private void LoadFromFile()
         {
             string filePath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments) + @"\PreminderKegiatan.txt";
             try
@@ -79,7 +77,5 @@ namespace Preminder.Forms
                 Console.WriteLine(e.Message);
             }
         }
-
-
     }
 }

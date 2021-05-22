@@ -33,6 +33,12 @@ namespace Preminder.Forms
             this.tbCourseSchedule = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvCourseSchedule = new System.Windows.Forms.DataGridView();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.courseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hourDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblCourseScheduleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.preminderDataSet = new Preminder.PreminderDataSet();
             this.rbSenin = new System.Windows.Forms.RadioButton();
             this.rbSelasa = new System.Windows.Forms.RadioButton();
             this.rbRabu = new System.Windows.Forms.RadioButton();
@@ -47,18 +53,12 @@ namespace Preminder.Forms
             this.btnDelete = new System.Windows.Forms.Button();
             this.tbHour = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.preminderDataSet = new Preminder.PreminderDataSet();
             this.preminderDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tblCourseScheduleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblCourseScheduleTableAdapter = new Preminder.PreminderDataSetTableAdapters.TblCourseScheduleTableAdapter();
-            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.courseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hourDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCourseSchedule)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblCourseScheduleBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.preminderDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.preminderDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblCourseScheduleBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tbCourseSchedule
@@ -94,6 +94,44 @@ namespace Preminder.Forms
             this.dgvCourseSchedule.Name = "dgvCourseSchedule";
             this.dgvCourseSchedule.Size = new System.Drawing.Size(709, 302);
             this.dgvCourseSchedule.TabIndex = 3;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Width = 40;
+            // 
+            // courseDataGridViewTextBoxColumn
+            // 
+            this.courseDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.courseDataGridViewTextBoxColumn.DataPropertyName = "Course";
+            this.courseDataGridViewTextBoxColumn.HeaderText = "Nama Jadwal";
+            this.courseDataGridViewTextBoxColumn.Name = "courseDataGridViewTextBoxColumn";
+            // 
+            // dayDataGridViewTextBoxColumn
+            // 
+            this.dayDataGridViewTextBoxColumn.DataPropertyName = "Day";
+            this.dayDataGridViewTextBoxColumn.HeaderText = "Hari";
+            this.dayDataGridViewTextBoxColumn.Name = "dayDataGridViewTextBoxColumn";
+            this.dayDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // hourDataGridViewTextBoxColumn
+            // 
+            this.hourDataGridViewTextBoxColumn.DataPropertyName = "Hour";
+            this.hourDataGridViewTextBoxColumn.HeaderText = "Jam";
+            this.hourDataGridViewTextBoxColumn.Name = "hourDataGridViewTextBoxColumn";
+            this.hourDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // tblCourseScheduleBindingSource
+            // 
+            this.tblCourseScheduleBindingSource.DataMember = "TblCourseSchedule";
+            this.tblCourseScheduleBindingSource.DataSource = this.preminderDataSet;
+            // 
+            // preminderDataSet
+            // 
+            this.preminderDataSet.DataSetName = "PreminderDataSet";
+            this.preminderDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // rbSenin
             // 
@@ -236,52 +274,14 @@ namespace Preminder.Forms
             this.label4.TabIndex = 19;
             this.label4.Text = "(format = 00:00)";
             // 
-            // preminderDataSet
-            // 
-            this.preminderDataSet.DataSetName = "PreminderDataSet";
-            this.preminderDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // preminderDataSetBindingSource
             // 
             this.preminderDataSetBindingSource.DataSource = this.preminderDataSet;
             this.preminderDataSetBindingSource.Position = 0;
             // 
-            // tblCourseScheduleBindingSource
-            // 
-            this.tblCourseScheduleBindingSource.DataMember = "TblCourseSchedule";
-            this.tblCourseScheduleBindingSource.DataSource = this.preminderDataSet;
-            // 
             // tblCourseScheduleTableAdapter
             // 
             this.tblCourseScheduleTableAdapter.ClearBeforeFill = true;
-            // 
-            // idDataGridViewTextBoxColumn
-            // 
-            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
-            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
-            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
-            this.idDataGridViewTextBoxColumn.Width = 40;
-            // 
-            // courseDataGridViewTextBoxColumn
-            // 
-            this.courseDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.courseDataGridViewTextBoxColumn.DataPropertyName = "Course";
-            this.courseDataGridViewTextBoxColumn.HeaderText = "Nama Jadwal";
-            this.courseDataGridViewTextBoxColumn.Name = "courseDataGridViewTextBoxColumn";
-            // 
-            // dayDataGridViewTextBoxColumn
-            // 
-            this.dayDataGridViewTextBoxColumn.DataPropertyName = "Day";
-            this.dayDataGridViewTextBoxColumn.HeaderText = "Hari";
-            this.dayDataGridViewTextBoxColumn.Name = "dayDataGridViewTextBoxColumn";
-            this.dayDataGridViewTextBoxColumn.Width = 200;
-            // 
-            // hourDataGridViewTextBoxColumn
-            // 
-            this.hourDataGridViewTextBoxColumn.DataPropertyName = "Hour";
-            this.hourDataGridViewTextBoxColumn.HeaderText = "Jam";
-            this.hourDataGridViewTextBoxColumn.Name = "hourDataGridViewTextBoxColumn";
-            this.hourDataGridViewTextBoxColumn.Width = 200;
             // 
             // FormJadwalKuliah
             // 
@@ -310,9 +310,9 @@ namespace Preminder.Forms
             this.Text = "JadwalKuliah";
             this.Load += new System.EventHandler(this.FormJadwalKuliah_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCourseSchedule)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblCourseScheduleBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.preminderDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.preminderDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblCourseScheduleBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
