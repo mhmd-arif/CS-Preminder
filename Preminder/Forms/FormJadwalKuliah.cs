@@ -30,6 +30,7 @@ namespace Preminder.Forms
         }
         private void FormJadwalKuliah_Load(object sender, EventArgs e)
         {
+            
             List<Schedule> dgvSchedule = newCourse.GetAll();
             dgvCourseSchedule.DataSource = dgvSchedule;
         }

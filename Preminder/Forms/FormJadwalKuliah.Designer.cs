@@ -29,6 +29,7 @@ namespace Preminder.Forms
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tbCourseSchedule = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvCourseSchedule = new System.Windows.Forms.DataGridView();
@@ -46,7 +47,18 @@ namespace Preminder.Forms
             this.btnDelete = new System.Windows.Forms.Button();
             this.tbHour = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.preminderDataSet = new Preminder.PreminderDataSet();
+            this.preminderDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblCourseScheduleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tblCourseScheduleTableAdapter = new Preminder.PreminderDataSetTableAdapters.TblCourseScheduleTableAdapter();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.courseDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dayDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hourDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCourseSchedule)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.preminderDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.preminderDataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblCourseScheduleBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tbCourseSchedule
@@ -67,10 +79,20 @@ namespace Preminder.Forms
             // 
             // dgvCourseSchedule
             // 
+            this.dgvCourseSchedule.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dgvCourseSchedule.AutoGenerateColumns = false;
             this.dgvCourseSchedule.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvCourseSchedule.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idDataGridViewTextBoxColumn,
+            this.courseDataGridViewTextBoxColumn,
+            this.dayDataGridViewTextBoxColumn,
+            this.hourDataGridViewTextBoxColumn});
+            this.dgvCourseSchedule.DataSource = this.tblCourseScheduleBindingSource;
             this.dgvCourseSchedule.Location = new System.Drawing.Point(137, 136);
             this.dgvCourseSchedule.Name = "dgvCourseSchedule";
-            this.dgvCourseSchedule.Size = new System.Drawing.Size(626, 302);
+            this.dgvCourseSchedule.Size = new System.Drawing.Size(709, 302);
             this.dgvCourseSchedule.TabIndex = 3;
             // 
             // rbSenin
@@ -87,7 +109,7 @@ namespace Preminder.Forms
             // rbSelasa
             // 
             this.rbSelasa.AutoSize = true;
-            this.rbSelasa.Location = new System.Drawing.Point(228, 63);
+            this.rbSelasa.Location = new System.Drawing.Point(244, 63);
             this.rbSelasa.Name = "rbSelasa";
             this.rbSelasa.Size = new System.Drawing.Size(57, 17);
             this.rbSelasa.TabIndex = 7;
@@ -98,7 +120,7 @@ namespace Preminder.Forms
             // rbRabu
             // 
             this.rbRabu.AutoSize = true;
-            this.rbRabu.Location = new System.Drawing.Point(319, 63);
+            this.rbRabu.Location = new System.Drawing.Point(356, 63);
             this.rbRabu.Name = "rbRabu";
             this.rbRabu.Size = new System.Drawing.Size(51, 17);
             this.rbRabu.TabIndex = 8;
@@ -109,7 +131,7 @@ namespace Preminder.Forms
             // rbKamis
             // 
             this.rbKamis.AutoSize = true;
-            this.rbKamis.Location = new System.Drawing.Point(396, 63);
+            this.rbKamis.Location = new System.Drawing.Point(462, 63);
             this.rbKamis.Name = "rbKamis";
             this.rbKamis.Size = new System.Drawing.Size(53, 17);
             this.rbKamis.TabIndex = 9;
@@ -120,7 +142,7 @@ namespace Preminder.Forms
             // rbJumat
             // 
             this.rbJumat.AutoSize = true;
-            this.rbJumat.Location = new System.Drawing.Point(498, 63);
+            this.rbJumat.Location = new System.Drawing.Point(570, 63);
             this.rbJumat.Name = "rbJumat";
             this.rbJumat.Size = new System.Drawing.Size(53, 17);
             this.rbJumat.TabIndex = 10;
@@ -131,7 +153,7 @@ namespace Preminder.Forms
             // rbSabtu
             // 
             this.rbSabtu.AutoSize = true;
-            this.rbSabtu.Location = new System.Drawing.Point(601, 63);
+            this.rbSabtu.Location = new System.Drawing.Point(678, 63);
             this.rbSabtu.Name = "rbSabtu";
             this.rbSabtu.Size = new System.Drawing.Size(53, 17);
             this.rbSabtu.TabIndex = 11;
@@ -160,7 +182,7 @@ namespace Preminder.Forms
             // rbMinggu
             // 
             this.rbMinggu.AutoSize = true;
-            this.rbMinggu.Location = new System.Drawing.Point(692, 63);
+            this.rbMinggu.Location = new System.Drawing.Point(786, 63);
             this.rbMinggu.Name = "rbMinggu";
             this.rbMinggu.Size = new System.Drawing.Size(60, 17);
             this.rbMinggu.TabIndex = 14;
@@ -180,7 +202,7 @@ namespace Preminder.Forms
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(15, 200);
+            this.btnUpdate.Location = new System.Drawing.Point(15, 199);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(101, 31);
             this.btnUpdate.TabIndex = 16;
@@ -190,7 +212,7 @@ namespace Preminder.Forms
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(15, 254);
+            this.btnDelete.Location = new System.Drawing.Point(15, 253);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(101, 31);
             this.btnDelete.TabIndex = 17;
@@ -214,12 +236,59 @@ namespace Preminder.Forms
             this.label4.TabIndex = 19;
             this.label4.Text = "(format = 00:00)";
             // 
+            // preminderDataSet
+            // 
+            this.preminderDataSet.DataSetName = "PreminderDataSet";
+            this.preminderDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // preminderDataSetBindingSource
+            // 
+            this.preminderDataSetBindingSource.DataSource = this.preminderDataSet;
+            this.preminderDataSetBindingSource.Position = 0;
+            // 
+            // tblCourseScheduleBindingSource
+            // 
+            this.tblCourseScheduleBindingSource.DataMember = "TblCourseSchedule";
+            this.tblCourseScheduleBindingSource.DataSource = this.preminderDataSet;
+            // 
+            // tblCourseScheduleTableAdapter
+            // 
+            this.tblCourseScheduleTableAdapter.ClearBeforeFill = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.Width = 40;
+            // 
+            // courseDataGridViewTextBoxColumn
+            // 
+            this.courseDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.courseDataGridViewTextBoxColumn.DataPropertyName = "Course";
+            this.courseDataGridViewTextBoxColumn.HeaderText = "Nama Jadwal";
+            this.courseDataGridViewTextBoxColumn.Name = "courseDataGridViewTextBoxColumn";
+            // 
+            // dayDataGridViewTextBoxColumn
+            // 
+            this.dayDataGridViewTextBoxColumn.DataPropertyName = "Day";
+            this.dayDataGridViewTextBoxColumn.HeaderText = "Hari";
+            this.dayDataGridViewTextBoxColumn.Name = "dayDataGridViewTextBoxColumn";
+            this.dayDataGridViewTextBoxColumn.Width = 200;
+            // 
+            // hourDataGridViewTextBoxColumn
+            // 
+            this.hourDataGridViewTextBoxColumn.DataPropertyName = "Hour";
+            this.hourDataGridViewTextBoxColumn.HeaderText = "Jam";
+            this.hourDataGridViewTextBoxColumn.Name = "hourDataGridViewTextBoxColumn";
+            this.hourDataGridViewTextBoxColumn.Width = 200;
+            // 
             // FormJadwalKuliah
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(884, 461);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tbHour);
             this.Controls.Add(this.btnDelete);
@@ -241,6 +310,9 @@ namespace Preminder.Forms
             this.Text = "JadwalKuliah";
             this.Load += new System.EventHandler(this.FormJadwalKuliah_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvCourseSchedule)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.preminderDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.preminderDataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblCourseScheduleBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -265,5 +337,13 @@ namespace Preminder.Forms
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.TextBox tbHour;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.BindingSource preminderDataSetBindingSource;
+        private PreminderDataSet preminderDataSet;
+        private System.Windows.Forms.BindingSource tblCourseScheduleBindingSource;
+        private PreminderDataSetTableAdapters.TblCourseScheduleTableAdapter tblCourseScheduleTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn courseDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dayDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hourDataGridViewTextBoxColumn;
     }
 }

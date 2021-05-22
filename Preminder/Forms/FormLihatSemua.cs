@@ -30,6 +30,9 @@ namespace Preminder.Forms
 
         private void FormLihatSemua_Load(object sender, EventArgs e)
         {
+            
+            // TODO: This line of code loads data into the 'preminderDataSet.TBTugas' table. You can move, or remove it, as needed.
+            this.tBTugasTableAdapter.Fill(this.preminderDataSet.TBTugas);
             updateDgv();
             loadFromFile();
             lb_Kegiatan.DataSource = toDoTasks;
