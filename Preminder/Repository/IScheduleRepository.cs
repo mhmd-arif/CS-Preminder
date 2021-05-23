@@ -36,7 +36,7 @@ namespace Preminder.Repository
             List<Schedule> listSchedule = new List<Schedule>();
             
             SqlConnection con = new SqlConnection(connstring);
-            string sql = "select * from TblCourseSchedule";
+            string sql = "SELECT * FROM TblCourseSchedule ORDER BY case when Day = 'Senin' then 1 when Day = 'Selasa' then 2 when Day = 'Rabu' then 3 when Day = 'Kamis' then 4 when Day = 'Jumat' then 5 when Day = 'Sabtu' then 6 when Day = 'Minggu' then 7 else NULL end, Hour" ;
 
             con.Open();
 

@@ -188,9 +188,9 @@ namespace Preminder.Forms
             // 
             // btnRefres
             // 
-            this.btnRefres.Location = new System.Drawing.Point(679, 12);
+            this.btnRefres.Location = new System.Drawing.Point(728, 12);
             this.btnRefres.Name = "btnRefres";
-            this.btnRefres.Size = new System.Drawing.Size(75, 23);
+            this.btnRefres.Size = new System.Drawing.Size(104, 31);
             this.btnRefres.TabIndex = 13;
             this.btnRefres.Text = "Refresh";
             this.btnRefres.UseVisualStyleBackColor = true;

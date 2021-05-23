@@ -26,8 +26,15 @@ namespace Preminder.Forms
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string day = GetDay();
-            newCourse.Add(tbCourseSchedule.Text, day,tbHour.Text);
-            MessageBox.Show("Jadwal Kuliah berhasil ditambahkan");
+            if (tbCourseSchedule.Text != "" && day != "" && tbHour.Text != ""  )
+            {
+                newCourse.Add(tbCourseSchedule.Text, day, tbHour.Text);
+                MessageBox.Show("Jadwal Kuliah berhasil ditambahkan");
+            }
+            else
+            {
+                MessageBox.Show("Input tidak boleh kosong!, silakan ulangi kembali");
+            }
 
             UpdateDgv();
             Clear();
