@@ -28,7 +28,7 @@ namespace Preminder.Repository
         // Methods
 
         /// <summary>
-        /// Method untuk mendapatkan data dari tabel CourseSchedule pada database
+        /// Method untuk mendapatkan data dari tabel CourseSchedule pada database, serta nengurutkan berdasarkan Hari dan Jam
         /// </summary>
         /// <returns></returns>
         public List<Schedule> GetAll()

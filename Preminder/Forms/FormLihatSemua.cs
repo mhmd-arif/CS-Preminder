@@ -5,6 +5,8 @@ using Preminder.Entity;
 using Preminder.Repository;
 using System.IO;
 using Newtonsoft.Json;
+using System.Data;
+using System.Data.SqlClient;
 
 
 namespace Preminder.Forms
@@ -12,6 +14,10 @@ namespace Preminder.Forms
     public partial class FormLihatSemua : Form
     {
         // Variables
+        readonly static string pathDB = Path.GetFullPath(Environment.CurrentDirectory) + @"\Database\";
+        readonly static string DbName = "PreminderDataSet.mdf";
+        readonly string connstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + pathDB + DbName + ";Integrated Security=True";
+
         readonly private ScheduleRepository newCourseSchedule = new ScheduleRepository();
         readonly private TodoRepository newToDo = new TodoRepository();
         private List<String> toDoTasks = new List<string>();
@@ -76,6 +82,51 @@ namespace Preminder.Forms
                 Console.WriteLine("The file could not be read:");
                 Console.WriteLine(e.Message);
             }
+        }
+
+        private void tb_SearchByCourse_TextChanged(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(connstring);
+            string sqlQuery = "SELECT * FROM TblCourseSchedule where Course = '" + tb_SearchByCourse.Text + "' ";
+
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sqlQuery, con);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+
+            sda.Fill(dt);
+            dgvCourseSchedule.DataSource = dt;
+            con.Close();
+        }
+
+        private void tb_FilterByDay_TextChanged(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(connstring);
+            string sqlQuery = "SELECT * FROM TblCourseSchedule where Day = '" + tb_FilterByDay.Text + "' ";
+
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sqlQuery, con);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+
+            sda.Fill(dt);
+            dgvCourseSchedule.DataSource = dt;
+            con.Close();
+        }
+
+        private void tb_SearchByTodo_TextChanged(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(connstring);
+            string sqlQuery = "SELECT * FROM TBTugas where Tugas = '" + tb_SearchByTodo.Text + "' ";
+
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sqlQuery, con);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+
+            sda.Fill(dt);
+            dgvToDo.DataSource = dt;
+            con.Close();
         }
     }
 }

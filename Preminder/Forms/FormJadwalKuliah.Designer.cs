@@ -55,6 +55,11 @@ namespace Preminder.Forms
             this.label4 = new System.Windows.Forms.Label();
             this.preminderDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tblCourseScheduleTableAdapter = new Preminder.PreminderDataSetTableAdapters.TblCourseScheduleTableAdapter();
+            this.tb_SearchByCourse = new System.Windows.Forms.TextBox();
+            this.tb_FilterByDay = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.btnRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCourseSchedule)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCourseScheduleBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.preminderDataSet)).BeginInit();
@@ -230,7 +235,7 @@ namespace Preminder.Forms
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(15, 145);
+            this.btnAdd.Location = new System.Drawing.Point(15, 136);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(101, 31);
             this.btnAdd.TabIndex = 15;
@@ -240,7 +245,7 @@ namespace Preminder.Forms
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(15, 199);
+            this.btnUpdate.Location = new System.Drawing.Point(15, 183);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(101, 31);
             this.btnUpdate.TabIndex = 16;
@@ -250,7 +255,7 @@ namespace Preminder.Forms
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(15, 253);
+            this.btnDelete.Location = new System.Drawing.Point(15, 230);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(101, 31);
             this.btnDelete.TabIndex = 17;
@@ -283,12 +288,61 @@ namespace Preminder.Forms
             // 
             this.tblCourseScheduleTableAdapter.ClearBeforeFill = true;
             // 
+            // tb_SearchByCourse
+            // 
+            this.tb_SearchByCourse.Location = new System.Drawing.Point(15, 347);
+            this.tb_SearchByCourse.Name = "tb_SearchByCourse";
+            this.tb_SearchByCourse.Size = new System.Drawing.Size(100, 20);
+            this.tb_SearchByCourse.TabIndex = 20;
+            this.tb_SearchByCourse.TextChanged += new System.EventHandler(this.tb_SearchByCourse_TextChanged);
+            // 
+            // tb_FilterByDay
+            // 
+            this.tb_FilterByDay.Location = new System.Drawing.Point(15, 392);
+            this.tb_FilterByDay.Name = "tb_FilterByDay";
+            this.tb_FilterByDay.Size = new System.Drawing.Size(100, 20);
+            this.tb_FilterByDay.TabIndex = 22;
+            this.tb_FilterByDay.TextChanged += new System.EventHandler(this.tb_FilterByDay_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(15, 376);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(57, 13);
+            this.label6.TabIndex = 23;
+            this.label6.Text = "Filter (Hari)";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(15, 331);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(61, 13);
+            this.label5.TabIndex = 21;
+            this.label5.Text = "Cari Jadwal";
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.Location = new System.Drawing.Point(15, 277);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(101, 31);
+            this.btnRefresh.TabIndex = 24;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = true;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // FormJadwalKuliah
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.ClientSize = new System.Drawing.Size(884, 461);
+            this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.tb_FilterByDay);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.tb_SearchByCourse);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.tbHour);
             this.Controls.Add(this.btnDelete);
@@ -345,5 +399,10 @@ namespace Preminder.Forms
         private System.Windows.Forms.DataGridViewTextBoxColumn courseDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn dayDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn hourDataGridViewTextBoxColumn;
+        private System.Windows.Forms.TextBox tb_SearchByCourse;
+        private System.Windows.Forms.TextBox tb_FilterByDay;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnRefresh;
     }
 }

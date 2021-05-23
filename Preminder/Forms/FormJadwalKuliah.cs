@@ -3,13 +3,20 @@ using System.Collections.Generic;
 using System.Windows.Forms;
 using Preminder.Repository;
 using Preminder.Entity;
+using System.Data;
+using System.Data.SqlClient;
+using System.IO;
 
 namespace Preminder.Forms
 {
     public partial class FormJadwalKuliah : Form
-    {        
-        // 
+    {
+        // Variables
         readonly private ScheduleRepository newCourse = new ScheduleRepository();
+
+        readonly static string pathDB = Path.GetFullPath(Environment.CurrentDirectory) + @"\Database\";
+        readonly static string DbName = "PreminderDataSet.mdf";
+        readonly string connstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + pathDB + DbName + ";Integrated Security=True";
 
 
         public FormJadwalKuliah()
@@ -108,6 +115,42 @@ namespace Preminder.Forms
             rbJumat.Checked = false;
             rbSabtu.Checked = false;
             rbMinggu.Checked = false;
+        }
+
+        private void tb_SearchByCourse_TextChanged(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(connstring);
+            string sqlQuery = "SELECT * FROM TblCourseSchedule where Course = '" + tb_SearchByCourse.Text + "' ";
+            
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sqlQuery, con);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+
+            sda.Fill(dt);
+            dgvCourseSchedule.DataSource = dt;
+            con.Close();
+        }
+
+        private void tb_FilterByDay_TextChanged(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(connstring);
+            string sqlQuery = "SELECT * FROM TblCourseSchedule where Day = '" + tb_FilterByDay.Text + "' ";
+
+            con.Open();
+            SqlCommand cmd = new SqlCommand(sqlQuery, con);
+            SqlDataAdapter sda = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+
+            sda.Fill(dt);
+            dgvCourseSchedule.DataSource = dt;
+            con.Close();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            List<Schedule> dgvSchedule = newCourse.GetAll();
+            dgvCourseSchedule.DataSource = dgvSchedule;
         }
     }
 }
