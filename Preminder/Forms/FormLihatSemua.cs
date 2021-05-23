@@ -86,6 +86,9 @@ namespace Preminder.Forms
 
         private void tb_SearchByCourse_TextChanged(object sender, EventArgs e)
         {
+            tb_SearchByTodo.Clear();
+            tb_FilterByDay.Clear();
+
             SqlConnection con = new SqlConnection(connstring);
             string sqlQuery = "SELECT * FROM TblCourseSchedule where Course = '" + tb_SearchByCourse.Text + "' ";
 
@@ -101,6 +104,9 @@ namespace Preminder.Forms
 
         private void tb_FilterByDay_TextChanged(object sender, EventArgs e)
         {
+            tb_SearchByTodo.Clear();
+            tb_SearchByCourse.Clear();
+
             SqlConnection con = new SqlConnection(connstring);
             string sqlQuery = "SELECT * FROM TblCourseSchedule where Day = '" + tb_FilterByDay.Text + "' ";
 
@@ -116,6 +122,9 @@ namespace Preminder.Forms
 
         private void tb_SearchByTodo_TextChanged(object sender, EventArgs e)
         {
+            tb_FilterByDay.Clear();
+            tb_SearchByCourse.Clear();
+
             SqlConnection con = new SqlConnection(connstring);
             string sqlQuery = "SELECT * FROM TBTugas where Tugas = '" + tb_SearchByTodo.Text + "' ";
 

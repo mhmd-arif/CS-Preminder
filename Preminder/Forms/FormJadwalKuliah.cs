@@ -118,7 +118,9 @@ namespace Preminder.Forms
         }
 
         private void tb_SearchByCourse_TextChanged(object sender, EventArgs e)
-        {
+        {            
+            tb_FilterByDay.Clear();
+
             SqlConnection con = new SqlConnection(connstring);
             string sqlQuery = "SELECT * FROM TblCourseSchedule where Course = '" + tb_SearchByCourse.Text + "' ";
             
@@ -134,6 +136,8 @@ namespace Preminder.Forms
 
         private void tb_FilterByDay_TextChanged(object sender, EventArgs e)
         {
+            tb_SearchByCourse.Clear();
+
             SqlConnection con = new SqlConnection(connstring);
             string sqlQuery = "SELECT * FROM TblCourseSchedule where Day = '" + tb_FilterByDay.Text + "' ";
 
