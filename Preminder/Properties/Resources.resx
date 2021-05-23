@@ -121,13 +121,28 @@
   <data name="task_fix" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\task_fix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="to-do-list_fix" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\to-do-list_fix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="diary_fix" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\diary_fix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="task white 40 px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\task white 40 px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="calender white 40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\calender white 40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="to do white 40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\to do white 40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="calendar_fix" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\calendar_fix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="to-do-list_fix" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\to-do-list_fix.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="overview white 40px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\overview white 40px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="preminderLogo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\preminderLogo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

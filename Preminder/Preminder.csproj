@@ -181,6 +181,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>PreminderDataSet.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\preminderLogo.png" />
+    <None Include="Resources\calender white 40px.png" />
+    <None Include="Resources\task white 40 px.png" />
+    <None Include="Resources\to do white 40px.png" />
+    <None Include="Resources\overview white 40px.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
