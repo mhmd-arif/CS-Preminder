@@ -14,7 +14,7 @@ namespace Preminder.Forms
     public partial class FormLihatSemua : Form
     {
         // Variables
-        readonly string connstring = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\Preminder\Preminder\Database\PreminderDataSet.mdf;Integrated Security = True";
+        readonly string connstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database\PreminderDataSet.mdf;Integrated Security=True";
 
         readonly private ScheduleRepository newCourseSchedule = new ScheduleRepository();
         readonly private TodoRepository newToDo = new TodoRepository();

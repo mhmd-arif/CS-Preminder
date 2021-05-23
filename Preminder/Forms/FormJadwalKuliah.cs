@@ -14,7 +14,7 @@ namespace Preminder.Forms
         // Variables
         readonly private ScheduleRepository newCourse = new ScheduleRepository();
 
-        readonly string connstring = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\Preminder\Preminder\Database\PreminderDataSet.mdf;Integrated Security = True";
+        readonly string connstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database\PreminderDataSet.mdf;Integrated Security=True";
 
 
         public FormJadwalKuliah()

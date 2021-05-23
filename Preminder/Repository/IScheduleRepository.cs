@@ -20,7 +20,7 @@ namespace Preminder.Repository
     public class ScheduleRepository : IScheduleRepository
     {
         // Variables
-        readonly string connstring = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\Preminder\Preminder\Database\PreminderDataSet.mdf;Integrated Security = True";
+        readonly string connstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database\PreminderDataSet.mdf;Integrated Security=True";
 
 
         // Methods

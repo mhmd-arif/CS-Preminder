@@ -15,14 +15,14 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_281E97350BE649CEADA93AF0FF22D3EA"
-        "OwnerKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_24F8CC289A3AB8394D13635F9B8403C2"
+        "OwnerKey" = "8:_57419BC3AF074F5090E9247491DFFE9A"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_492B9DE5B29FCC43C67A4281A01606C5"
-        "OwnerKey" = "8:_57419BC3AF074F5090E9247491DFFE9A"
+        "MsmKey" = "8:_281E97350BE649CEADA93AF0FF22D3EA"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -45,8 +45,14 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_90869AD29013F5E2A601B5B9311625F8"
+        "MsmKey" = "8:_DC48A1AEA6B94D3B9687820C0A563864"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_F1EE58A987274E5BB6FCECD757FD6D62"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -58,7 +64,13 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_492B9DE5B29FCC43C67A4281A01606C5"
+        "OwnerKey" = "8:_24F8CC289A3AB8394D13635F9B8403C2"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_90869AD29013F5E2A601B5B9311625F8"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -79,6 +91,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -95,6 +123,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -124,34 +160,14 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_281E97350BE649CEADA93AF0FF22D3EA"
-            {
-            "SourcePath" = "8:..\\icon\\preminderLogo.ico"
-            "TargetName" = "8:preminderLogo.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_EF14B5C4068F44A69803A4C9B4C2D28C"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_492B9DE5B29FCC43C67A4281A01606C5"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_24F8CC289A3AB8394D13635F9B8403C2"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_492B9DE5B29FCC43C67A4281A01606C5"
+                    "_24F8CC289A3AB8394D13635F9B8403C2"
                     {
                     "Name" = "8:Newtonsoft.Json.dll"
                     "Attributes" = "3:512"
@@ -173,6 +189,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_281E97350BE649CEADA93AF0FF22D3EA"
+            {
+            "SourcePath" = "8:..\\icon\\preminderLogo.ico"
+            "TargetName" = "8:preminderLogo.ico"
+            "Tag" = "8:"
+            "Folder" = "8:_EF14B5C4068F44A69803A4C9B4C2D28C"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_4B32E2030CBA4712AA8BEC5AAEEDE2EF"
@@ -224,6 +260,46 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_DC48A1AEA6B94D3B9687820C0A563864"
+            {
+            "SourcePath" = "8:..\\Preminder\\Database\\PreminderDataSet.mdf"
+            "TargetName" = "8:PreminderDataSet.mdf"
+            "Tag" = "8:"
+            "Folder" = "8:_FEE2F2BC718B4646BF0C15047BEC27CE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F1EE58A987274E5BB6FCECD757FD6D62"
+            {
+            "SourcePath" = "8:..\\Preminder\\Database\\PreminderDataSet_log.ldf"
+            "TargetName" = "8:PreminderDataSet_log.ldf"
+            "Tag" = "8:"
+            "Folder" = "8:_FEE2F2BC718B4646BF0C15047BEC27CE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -286,6 +362,17 @@
                         {
                         }
                     }
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_FEE2F2BC718B4646BF0C15047BEC27CE"
+                    {
+                    "Name" = "8:Database"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_C8043EAF86C94F5B92BC1444E8A51538"
+                        "Folders"
+                        {
+                        }
+                    }
                 }
             }
         }
@@ -305,7 +392,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Setup Preminder"
         "ProductCode" = "8:{4FDA3239-19D5-42E5-8B63-1FF085E2DB43}"
-        "PackageCode" = "8:{3DEE5319-3F0A-4784-8361-DC93AF3F6B81}"
+        "PackageCode" = "8:{00F4E981-4B37-47CB-97A0-E58D3B7950A1}"
         "UpgradeCode" = "8:{504C4CAF-E447-4CD9-B7FF-46798A343BF0}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -854,7 +941,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_57419BC3AF074F5090E9247491DFFE9A"
             {
-            "SourcePath" = "8:..\\Preminder\\obj\\Release\\Preminder.exe"
+            "SourcePath" = "8:..\\Preminder\\obj\\Debug\\Preminder.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_D59F27688AC24D9D88CD46102C3C8B9B"
