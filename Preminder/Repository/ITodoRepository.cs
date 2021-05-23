@@ -20,9 +20,7 @@ namespace Preminder.Repository
     public class TodoRepository : ITodoRepository
     {
         // Variables
-        readonly private static string pathDB = Path.GetFullPath(Environment.CurrentDirectory) + @"\Database\";
-        readonly private static string DbName = "PreminderDataSet.mdf";
-        readonly private static string connstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + pathDB + DbName + ";Integrated Security=True";
+        readonly private static string connstring = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\Preminder\Preminder\Database\PreminderDataSet.mdf;Integrated Security = True";
 
 
         // Methods

@@ -20,9 +20,7 @@ namespace Preminder.Repository
     public class ScheduleRepository : IScheduleRepository
     {
         // Variables
-        readonly static string pathDB = Path.GetFullPath(Environment.CurrentDirectory) + @"\Database\";
-        readonly static string DbName = "PreminderDataSet.mdf";
-        readonly string connstring = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + pathDB + DbName + ";Integrated Security=True";
+        readonly string connstring = @"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=G:\Preminder\Preminder\Database\PreminderDataSet.mdf;Integrated Security = True";
 
 
         // Methods
