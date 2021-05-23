@@ -29,16 +29,17 @@ namespace Preminder
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHomePage));
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.btnJadwal = new System.Windows.Forms.Button();
+            this.btnKegiatan = new System.Windows.Forms.Button();
+            this.btnTugas = new System.Windows.Forms.Button();
+            this.btnLihatSemua = new System.Windows.Forms.Button();
             this.panelMerk = new System.Windows.Forms.Panel();
             this.lblMerk = new System.Windows.Forms.Label();
             this.panelJudul = new System.Windows.Forms.Panel();
             this.lblJudul = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
-            this.btnJadwal = new System.Windows.Forms.Button();
-            this.btnKegiatan = new System.Windows.Forms.Button();
-            this.btnTugas = new System.Windows.Forms.Button();
-            this.btnLihatSemua = new System.Windows.Forms.Button();
             this.panelMenu.SuspendLayout();
             this.panelMerk.SuspendLayout();
             this.panelJudul.SuspendLayout();
@@ -57,61 +58,6 @@ namespace Preminder
             this.panelMenu.Name = "panelMenu";
             this.panelMenu.Size = new System.Drawing.Size(200, 580);
             this.panelMenu.TabIndex = 0;
-            // 
-            // panelMerk
-            // 
-            this.panelMerk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
-            this.panelMerk.Controls.Add(this.lblMerk);
-            this.panelMerk.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelMerk.Location = new System.Drawing.Point(0, 0);
-            this.panelMerk.Name = "panelMerk";
-            this.panelMerk.Size = new System.Drawing.Size(200, 80);
-            this.panelMerk.TabIndex = 0;
-            // 
-            // lblMerk
-            // 
-            this.lblMerk.AutoSize = true;
-            this.lblMerk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMerk.ForeColor = System.Drawing.Color.White;
-            this.lblMerk.Location = new System.Drawing.Point(45, 32);
-            this.lblMerk.Name = "lblMerk";
-            this.lblMerk.Size = new System.Drawing.Size(98, 16);
-            this.lblMerk.TabIndex = 0;
-            this.lblMerk.Text = "PREMINDER";
-            // 
-            // panelJudul
-            // 
-            this.panelJudul.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.panelJudul.Controls.Add(this.lblJudul);
-            this.panelJudul.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelJudul.Location = new System.Drawing.Point(200, 0);
-            this.panelJudul.Name = "panelJudul";
-            this.panelJudul.Size = new System.Drawing.Size(900, 80);
-            this.panelJudul.TabIndex = 1;
-            // 
-            // lblJudul
-            // 
-            this.lblJudul.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.lblJudul.AutoSize = true;
-            this.lblJudul.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblJudul.ForeColor = System.Drawing.Color.White;
-            this.lblJudul.Location = new System.Drawing.Point(418, 32);
-            this.lblJudul.Name = "lblJudul";
-            this.lblJudul.Size = new System.Drawing.Size(52, 16);
-            this.lblJudul.TabIndex = 0;
-            this.lblJudul.Text = "HOME";
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelDesktop.BackgroundImage = global::Preminder.Properties.Resources.preminderLogo;
-            this.panelDesktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.panelDesktop.Location = new System.Drawing.Point(200, 80);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(900, 500);
-            this.panelDesktop.TabIndex = 2;
             // 
             // btnJadwal
             // 
@@ -189,6 +135,61 @@ namespace Preminder
             this.btnLihatSemua.UseVisualStyleBackColor = true;
             this.btnLihatSemua.Click += new System.EventHandler(this.btnLihatSemua_Click);
             // 
+            // panelMerk
+            // 
+            this.panelMerk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(39)))), ((int)(((byte)(58)))));
+            this.panelMerk.Controls.Add(this.lblMerk);
+            this.panelMerk.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelMerk.Location = new System.Drawing.Point(0, 0);
+            this.panelMerk.Name = "panelMerk";
+            this.panelMerk.Size = new System.Drawing.Size(200, 80);
+            this.panelMerk.TabIndex = 0;
+            // 
+            // lblMerk
+            // 
+            this.lblMerk.AutoSize = true;
+            this.lblMerk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMerk.ForeColor = System.Drawing.Color.White;
+            this.lblMerk.Location = new System.Drawing.Point(45, 32);
+            this.lblMerk.Name = "lblMerk";
+            this.lblMerk.Size = new System.Drawing.Size(98, 16);
+            this.lblMerk.TabIndex = 0;
+            this.lblMerk.Text = "PREMINDER";
+            // 
+            // panelJudul
+            // 
+            this.panelJudul.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.panelJudul.Controls.Add(this.lblJudul);
+            this.panelJudul.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelJudul.Location = new System.Drawing.Point(200, 0);
+            this.panelJudul.Name = "panelJudul";
+            this.panelJudul.Size = new System.Drawing.Size(900, 80);
+            this.panelJudul.TabIndex = 1;
+            // 
+            // lblJudul
+            // 
+            this.lblJudul.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lblJudul.AutoSize = true;
+            this.lblJudul.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.749999F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblJudul.ForeColor = System.Drawing.Color.White;
+            this.lblJudul.Location = new System.Drawing.Point(418, 32);
+            this.lblJudul.Name = "lblJudul";
+            this.lblJudul.Size = new System.Drawing.Size(52, 16);
+            this.lblJudul.TabIndex = 0;
+            this.lblJudul.Text = "HOME";
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelDesktop.BackgroundImage = global::Preminder.Properties.Resources.preminderLogo;
+            this.panelDesktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.panelDesktop.Location = new System.Drawing.Point(200, 80);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(900, 500);
+            this.panelDesktop.TabIndex = 2;
+            // 
             // FormHomePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -197,6 +198,7 @@ namespace Preminder
             this.Controls.Add(this.panelDesktop);
             this.Controls.Add(this.panelJudul);
             this.Controls.Add(this.panelMenu);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormHomePage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HomePage";
