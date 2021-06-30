@@ -12,3 +12,7 @@ Muhammad Arif Hidayat (20/463608/TK/51600)
 ![ERDPreminder](https://user-images.githubusercontent.com/73144184/116837910-7e0cba80-abf6-11eb-90c3-9640b529cb22.jpg)
 
 untuk database Kegiatan kami menggunakan file.txt agar lebih bervariasi
+
+## Panduan Penggunaan Aplikasi
+Link Youtube : https://www.youtube.com/watch?v=1mFjspUCvvs  
+Panduan Aplikasi dalam pdf : https://drive.google.com/file/d/1aJEa0mObdMorhjGpy_T4cQLpcoZFVrxV/view?usp=sharing
